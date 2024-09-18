@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="navbar">
+            <h1>OLYMPOS INK</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="blog.html">ABOUT US</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">BOOK NOW</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="account/login.html" class="btn login">Login</a>
+                <a href="/register.html" class="btn signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login</h2>
+            <p>Please fill out the following fields to login:</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username" required>
+                    <span class="error-message">Username cannot be blank.</span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-group checkbox-group">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Olympos Ink</h3>
+            <p>We are here for you to experience the best quality tattoo experience. Follow us on social media!</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Olympos Ink | All Rights Reserved</p>
+        </div> 
+    </footer>
+    <script src="/src/login.js" type="module"</script></script>
+</body>
+
+            

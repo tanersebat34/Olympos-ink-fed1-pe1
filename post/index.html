@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Olympos Ink | Single blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="navbar">
+        <h1>OLYMPOS INK</h1>
+        <nav>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="../about-us.html">ABOUT US</a></li>
+            <li><a href="#">BOOK NOW</a></li>
+          </ul>
+          <ul id="admin-console">
+            <li><span>|</span></li>
+            <li><a href="./post/edit.html">MANAGE BLOGS</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons hidden">
+          <a id="loginBtn" href="/account/login.html" class="btn login">Login</a>
+          <a href="/account/register.html" class="btn signup">Sign Up</a>
+        </div>
+        <div class="logged-user">
+          <img id="adminLogo" src="?" alt="default profile logo" />
+          <p id="adminName"></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="blog-container">
+        <div id="single-blog-container"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Olympos Ink</h3>
+        <p>We are here for you to experience the best quality tattoo experience. Follow us on social media!</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Olympos Ink | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="/js/admin/authorization.mjs" type="module"></script>
+    <script src="/js/postBlogData.mjs" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+.blog-container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+#single-blog-container {
+    width: 100%;
+}
+
+#single-blog-containersection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+
+}
+
+
+#single-blog-container img {
+    justify-self: center;
+    width: 100%;
+}
+
+#single-blog-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    background-color: rgb(33, 33, 33);
+}
+
+#single-blog-container .bodyValue {
+    min-height: 200px;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+
+#author-box {
+    width: 100%;
+    max-width: 75rem;
+    height: 150px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#author-box p {
+    font-size: 16px;
+}
+
+#author-box .author {
+    align-self: center;
+}
+
+#author-box .bio {
+    width: 100%;
+}
+
+#author-box img {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+}
+
+.share-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.share-container .authorName {
+    justify-self: flex-start;
+    align-self: flex-start;
+    opacity: 0.8;
+}
+
+.share-container .tag-container {
+    justify-self: flex-start;
+    align-self: flex-start;
+    opacity: 0.8;
+}
+
+.ClickToShare {
+    height: 33px;
+    width: 33px;
+    align-self: flex-end;
+    font-size: 16px;
+    background-color: rgb(79, 79, 79);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+}
+
+.popup-message {
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media (max-width: 450px) {
+
+    #single-blog-container .bodyValue {
+        padding: 5px;
+    }
+
+}

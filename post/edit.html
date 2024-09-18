@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Olympos Ink | Blog editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1>OLYMPOS INK</h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../about-us.html">ABOUT US</a></li>
+            <li><a href="#">BOOK NOW</a></li>
+          </ul>
+          <ul id="admin-console">
+            <li><span>|</span></li>
+            <li><a href="#">MANAGE BLOGS</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons hidden">
+          <a id="loginBtn" href="/account/login.html" class="btn login">Login</a>
+          <a href="/account/register.html" class="btn signup">Sign Up</a>
+        </div>
+        <div class="logged-user">
+          <img id="adminLogo" src="?" alt="default profile logo" />
+          <p id="adminName"></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- this is section shows the admin a lesser information list over blogs available
+     that can be deleted or edited by click of buttons-->
+    <section class="blog-for-admin">
+      <h2>Admin bloglist:</h2>
+      <div class="max-container">
+        <div id="short-blogList"></div>
+      </div>
+    </section>
+
+    <!-- this is the new form which only handles EDITs for now-->
+    <section id="blogEditor" class="create-post-container">
+      <h3>Edit Blog Post</h3>
+      <form id="edit-post-form">
+        <label for="title">Title (Required):</label>
+        <input type="text" id="title" placeholder="Enter the post title" required />
+
+        <label for="body">Body (Optional):</label>
+        <textarea id="body" placeholder="Enter the post content"></textarea>
+
+        <label for="tags">Tags (Optional, comma separated):</label>
+        <input type="text" id="tags" placeholder="Enter tags separated by commas" />
+
+        <label for="media-url">Media URL (Optional):</label>
+        <input type="url" id="media-url" placeholder="Enter media image URL" />
+
+        <label for="media-alt">Media Alt Text (Optional):</label>
+        <input type="text" id="media-alt" placeholder="Enter alt text for the media" />
+
+        <button type="submit">Update Post</button>
+      </form>
+    </section>
+    <!-- END-->
+
+    <footer>
+      <div class="footer-content">
+        <h3>Olympos Ink</h3>
+        <p>En kaliteli dövme deneyimini yaşamanız için buradayız. Bizi sosyal medyada takip edin!</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Olympos Ink | All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="/js/admin/authorization.mjs" type="module"></script>
+    <script src="/js/blogAdminEditor.mjs" type="module"></script>
+  </body>
+</html>
+
+<section>
+  <div></div>
+
+  <div>
+    <button>Prev</button>
+    <button>Next</button>
+  </div>
+</section>

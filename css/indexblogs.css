@@ -1,0 +1,144 @@
+.blogs-container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+
+}
+
+#renderBlogsHere {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+    /* Use this to adjust the height of each grid box */
+    grid-auto-rows: 500px;
+
+}
+
+
+
+
+.blog-element {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#btn-divider {
+    margin-top: 10px;
+}
+
+.author,
+.creationDate {
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+
+.blogTitle {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 89.6px;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+
+.blogTitle {
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin: 0;
+}
+
+.blog-element:hover .blogTitle {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+@media (max-width: 610px) {
+
+    .blog-element .blogTitle {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+}
+
+
+/* This is the placement for EDIT button */
+#admin-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #0056b3;
+    cursor: pointer;
+    color: white;
+
+}
+
+#admin-btn:hover {
+    background-color: #014b99;
+
+}
+
+@media (max-width: 1250px) {
+
+    #renderBlogsHere {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #renderBlogsHere {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 610px) {
+
+    #renderBlogsHere {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+
+    }
+
+    .blog-element {
+
+        height: 450px;
+        max-width: 200px;
+    }
+
+
+}
