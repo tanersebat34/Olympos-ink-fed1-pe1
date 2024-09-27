@@ -61,8 +61,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function populateForm(blogData) {
-    const { title, body, tags, media, created, author } = blogData;
+    const { title, body, tags, media, id, created, author } = blogData;
 
+    document.getElementById("blog-id").value = id || "";
     document.getElementById("title").value = title || "";
     document.getElementById("body").value = body || "";
     document.getElementById("tags").value = tags ? tags.join(", ") : "";
@@ -73,6 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
+    const id =document.getElementById("blog-id").value.trim();
     const title = document.getElementById("title").value.trim();
     const body = document.getElementById("body").value.trim();
     const tagsInput = document.getElementById("tags").value.trim();
@@ -94,7 +96,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     };
 
     try {
-      const response = await fetch(`https://v2.api.noroff.dev/blog/posts/tanersebat/${postId}`, {
+      const response = await fetch(`https://v2.api.noroff.dev/blog/posts/tanersebat/${id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${accessToken}`,

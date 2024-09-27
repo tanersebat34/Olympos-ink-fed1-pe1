@@ -3,7 +3,7 @@ import { REGISTER_ENDPOINT } from "/js/utils/endpoints.mjs";
 const usernameInput = document.getElementById("usernameInput");
 const emailInput = document.getElementById("emailInput");
 const passwordInput = document.getElementById("passwordInput");
-const registerMessage = document.getElementById("register-message");
+const registerForm = document.getElementById("registerForm")
 
 async function handleFormSubmission(event) {
   event.preventDefault();
@@ -15,8 +15,8 @@ async function handleFormSubmission(event) {
   };
 
   try {
-    const registerEndpointFull = `${REGISTER_ENDPOINT}`;
-    const response = await fetch(registerEndpointFull, {
+    // const registerEndpointFull = `${REGISTER_ENDPOINT}`;
+    const response = await fetch(REGISTER_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,23 +29,9 @@ async function handleFormSubmission(event) {
       const errorMessage = errorData.message || "Registration failed. Please try again.";
       throw new Error(errorMessage);
     }
-
-    registerMessage.textContent = "Account successfully registered!";
-    registerMessage.classList.remove("hidden", "error");
-    registerMessage.classList.add("success");
-
-    setTimeout(() => {
-      registerMessage.classList.add("hidden");
-    }, 6000);
+    registerForm.reset();
+    alert("Account successfully registered!")    
   } catch (error) {
-    registerMessage.textContent = `Error: ${error.message}`;
-    registerMessage.classList.remove("hidden", "success");
-    registerMessage.classList.add("error");
-
-    setTimeout(() => {
-      registerMessage.classList.add("hidden");
-    }, 6000);
-
     console.error("Error during registration:", error);
   }
 }

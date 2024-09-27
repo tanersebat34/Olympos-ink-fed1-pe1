@@ -20,12 +20,12 @@
           </ul>
           <ul id="admin-console">
             <li><span>|</span></li>
-            <li><a href="#">MANAGE BLOGS</a></li>
+            <li><a href="./edit.html">MANAGE BLOGS</a></li>
           </ul>
         </nav>
         <div class="auth-buttons hidden">
-          <a id="loginBtn" href="/account/login.html" class="btn login">Login</a>
-          <a href="/account/register.html" class="btn signup">Sign Up</a>
+          <a id="loginBtn" href="../account/login.html" class="btn login">Login</a>
+          <a href="../account/register.html" class="btn signup">Sign Up</a>
         </div>
         <div class="logged-user">
           <img id="adminLogo" src="?" alt="default profile logo" />
@@ -47,6 +47,9 @@
     <section id="blogEditor" class="create-post-container">
       <h3>Edit Blog Post</h3>
       <form id="edit-post-form">
+        <label for="blod-id">You are editing blog:</label>
+        <input id="blog-id" type="text" disabled>
+
         <label for="title">Title (Required):</label>
         <input type="text" id="title" placeholder="Enter the post title" required />
 

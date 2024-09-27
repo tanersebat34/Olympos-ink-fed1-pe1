@@ -31,7 +31,7 @@ export function createBlogPostElement(post) {
   const deleteButton = document.createElement("button");
   deleteButton.type = "button";
   deleteButton.id = "delete";
-  deleteButton.value = id;
+  deleteButton.setAttribute("data-id", id);
   deleteButton.textContent = "DELETE";
   deleteButton.addEventListener("click", async function () {
     const userConfirmed = window.confirm("Are you sure you want to delete this blog post?");
@@ -86,6 +86,7 @@ export function createBlogPostElement(post) {
 
       const blogDetail = await response.json();
 
+      document.getElementById("blog-id").value = blogDetail.data.id;
       document.getElementById("title").value = blogDetail.data.title;
       document.getElementById("body").value = blogDetail.data.body;
       document.getElementById("media-url").value = blogDetail.data.media?.url || "";
