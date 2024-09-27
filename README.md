@@ -1,9 +1,11 @@
+
 # FED1 Project Exam 1
 
 # Taner Sebat´s exam project 2024
 
 ## Description 
 Created tattoo studio blogweb , design, logo and development.
+![Ekran Resmi 2024-09-27 13 46 26](https://github.com/user-attachments/assets/f3710d2c-5f10-4750-a77f-225ba17b009b)
 
 
 ## Built With
