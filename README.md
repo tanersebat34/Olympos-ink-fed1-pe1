@@ -62,6 +62,21 @@ Once you run the project in your browser:
 	•	Blog: Displays posts about the studio’s tattoo creations.
 	•	Social Media: Provides links to the studio’s social media accounts for more information.
 
+
+ JavaScript Functionality
+
+	•	Login Functionality:
+The JavaScript files include logic for handling user authentication through a login system. This allows users to access the administrative features, such as managing blogs or other content in the tattoo studio’s website.
+	•	API Integration:
+The project dynamically pulls content from an API to display blog posts, recent tattoo creations, and other information directly on the website. This allows for real-time updates without needing to modify the HTML manually.
+The scripts in the /js folder handle fetching and rendering data from the API, ensuring that the content is always up-to-date.
+
+These functionalities are vital for keeping the website interactive and user-friendly, especially for both administrators and regular visitors.
+
+This section helps explain the role of JavaScript in your project and how it contributes to the functionality of your website.
+
+
+
 Screenshots
 
 Here are some screenshots from the project:
