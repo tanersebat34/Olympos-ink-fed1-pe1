@@ -19,3 +19,94 @@ Javascript
 - Dynamic image carousel: The application has an dynamic image carousel that is well functioning.
 
 Use this file to describe your project.
+
+
+
+---------------------------------------- FOR PORTFOLIO README.MD ---------------------------------------
+
+Olympos Ink | Tattoo Shop Website
+
+About the Project
+
+Olympos Ink is a website project designed for a professional tattoo studio. The aim of this project is to provide a platform where clients can explore the tattoo artist’s work, read blog posts, and book appointments. The website features a sleek and user-friendly interface, built with modern web technologies.
+
+Features
+
+	•	Homepage: A brief introduction to Olympos Ink and a showcase of the studio’s highlighted tattoo work.
+	•	Video Section: A promotional video showing tattoo procedures at the studio.
+	•	Carousel: A slider showcasing the top three tattoo works.
+	•	Blog Section: A section for displaying the studio’s blog posts about their tattoo creations.
+	•	Social Media Links: Links that direct users to social media platforms.
+
+Project Setup
+
+git clone https://github.com/tanersebat34/Olympos-ink-fed1-pe1.git
+cd Olympos-ink-fed1-pe1
+
+Since the project consists of static HTML, CSS, and JavaScript files, you can directly open the index.html file in your browser to run it.
+
+Technologies Used
+
+	•	HTML5: For the structure and content of the pages.
+	•	CSS3: For styling and layout.
+	•	JavaScript (ES6+): For dynamic content loading and interactions like the carousel.
+	•	Google Fonts: For custom web font usage.
+	•	FontAwesome: For social media icons and other icons.
+
+Usage
+
+Once you run the project in your browser:
+
+	•	Homepage: Offers an overview of the Olympos Ink tattoo studio.
+	•	Carousel: Allows you to view the top tattoo works.
+	•	Blog: Displays posts about the studio’s tattoo creations.
+	•	Social Media: Provides links to the studio’s social media accounts for more information.
+
+Screenshots
+
+Here are some screenshots from the project:
+
+	•	Homepage
+ ![Ekran Resmi 2024-10-08 10 54 19](https://github.com/user-attachments/assets/c4e20d43-57fe-4579-8059-43ec75eb23cf)
+
+ 	•	Tattoo Gallery
+  ![Ekran Resmi 2024-10-08 10 54 29](https://github.com/user-attachments/assets/c4b317af-c68c-43ee-b981-92c3f2754275)
+
+  	•	Footer Section
+   ![Ekran Resmi 2024-10-08 10 54 44](https://github.com/user-attachments/assets/623d4225-afaf-419d-8a25-1418dc92af40)
+
+
+   Contributing
+
+To contribute, please submit a pull request. You can also report any issues or suggest improvements through the GitHub Issues section.
+
+License
+
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
